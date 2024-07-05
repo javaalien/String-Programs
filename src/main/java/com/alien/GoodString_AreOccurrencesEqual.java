@@ -12,7 +12,6 @@ public class GoodString_AreOccurrencesEqual {
 		boolean res = areOccurrencesEqual(str);
 
 		System.out.println(res);
-
 	}
 
 	private static boolean areOccurrencesEqual(String str) {
