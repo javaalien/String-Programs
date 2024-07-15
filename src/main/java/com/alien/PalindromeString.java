@@ -6,7 +6,7 @@ public class PalindromeString {
 
 	public static void main(String[] args) {
 
-		String str = "madam";
+		String str = "A man, a plan, a canal, Panama";
 
 		boolean palindrome = isPalindrome(str);
 
@@ -15,9 +15,12 @@ public class PalindromeString {
 	}
 
 	public static boolean isPalindrome(String input) {
-		int left = 0, right = input.length() - 1;
+
+		String cleaned = input.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+
+		int left = 0, right = cleaned.length() - 1;
 		while (left < right) {
-			if (input.charAt(left) != input.charAt(right)) {
+			if (cleaned.charAt(left) != cleaned.charAt(right)) {
 				return false;
 			}
 			left++;

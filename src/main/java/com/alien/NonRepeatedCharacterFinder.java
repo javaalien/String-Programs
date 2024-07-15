@@ -32,7 +32,6 @@ public class NonRepeatedCharacterFinder {
 				return ch;
 			}
 		}
-
 		return '\0';
 	}
 }
